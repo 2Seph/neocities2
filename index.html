@@ -17,10 +17,10 @@
             <img src="icon2.png">
             <p>my dreamJournal</p>
         </div>
-
+    
+  
         <div class="bottom1"></div>
         <div class="bottom2"></div>
-
 
 
         <div id="window1" class="window">
@@ -36,16 +36,15 @@
                 <div class="window-sidebar">
                     <p class="category-title">books fr</p>
                     <ul class="book-list">
-                        <li>The long walk - Stephen King</li>
-                        <li>Green mile - Stephen King</li>
-                        <li>Joyland - Stephen King</li>
-                        <li>Lord of the flies</li>
+                        <li onclick="longwalk()">The long walk - Stephen King</li>
+                        <li onclick="greenmile()">Green mile - Stephen King</li>
                         <li>Red rising 1</li>
                         <li>The poppy war</li>
                         <li>She who became the sun</li>
                         <li>Fingersmith - sarah waters</li>
+                        <li>Other books I've read but haven't reviewed</li>
                     </ul>
-                    <p class="category-title">ao3</p>
+                    <p class="category-title">a</p>
                     <ul class="book-list">
                         <li>Title A</li>
                         <li>Title B</li>
@@ -57,14 +56,11 @@
                 </div>
                 <div class="window-content">
                     <section>
-                        <p>Title & author</p>
+                        <p class="title"></p>
                          <div class="book-cover"></div>
                     </section>
                     <section>
-                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore illum consequuntur libero facilis illo, optio voluptate laboriosam, doloribus non ex ratione. Maxime odit voluptates ipsum deserunt quod, totam dicta praesentium!
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti mollitia nihil minima ipsam ad totam libero iure dicta labore, illo fugit optio dignissimos sequi odio veniam dolor voluptatibus eveniet corrupti.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium officia blanditiis aperiam, nihil perferendis, id reprehenderit laborum, facilis rerum tempora aut veritatis dolorum quasi illo ea non assumenda a mollitia.     </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia omnis itaque, et quae eligendi quod. Officiis tenetur harum itaque animi vel cupiditate placeat neque excepturi quis numquam, dolores voluptate pariatur.</p>     
+                   <p class="review">Click on a boooooookkfdk</p>
                    </section>
             </div>
             </div>
@@ -74,16 +70,42 @@
 
 
         <!-- Window 2 -->
-        <div id="window2" class="window">
-            <div class="window-header" id="header2">
-                <span class="window-title">Dream journal</span>
-                <span class="close-btn" onclick="closeWindow('window2')">X</span>
+<div id="window2" class="window">
+    <div class="window-header" id="header2">
+        <span class="window-title">Dream Journal</span>
+        <span class="close-btn" onclick="closeWindow('window2')">X</span>
+    </div>
+    <div class="window-content">
+        <div class="entry-preview">
+            <div class="entry">
+                <h3 class="entry-title">Dream Title 1</h3>
+                <p class="entry-date">Date 1</p>
+                <p class="entry-snippet">A brief preview of the dream entry...</p>
+                <a href="#" onclick="openEntry('entry1')">More</a>
             </div>
-            <div class="window-content">
-                <p>This is the content of dream journal.</p>
+            <div class="entry">
+                <h3 class="entry-title">Dream Title 2</h3>
+                <p class="entry-date">Date 2</p>
+                <p class="entry-snippet">A brief preview of the dream entry...</p>
+                <a href="#" onclick="openEntry('entry2')">More</a>
             </div>
+            <div class="entry">
+                <h3 class="entry-title">Dream Title 3</h3>
+                <p class="entry-date">Date 2</p>
+                <p class="entry-snippet">A brief preview of the dream entry...</p>
+                <a href="#" onclick="openEntry('entry2')">More</a>
+            </div>
+            <div class="entry">
+                <h3 class="entry-title">Dream Title 4</h3>
+                <p class="entry-date">Date 2</p>
+                <p class="entry-snippet">A brief preview of the dream entry...</p>
+                <a href="#" onclick="openEntry('entry2')">More</a>
+            </div>
+            <!-- Add more entries as needed -->
         </div>
     </div>
+</div>
+
 
     <script src="script.js"></script>
 </body>
